@@ -4,12 +4,6 @@ import processing.core.PFont;
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- * PROCESSING
- * Created by Nicolas Dutly
- * mNr.16207557
- * on 20/01/2017, 10:29.
- */
 public class shakespearsMonkey extends PApplet {
     static final int SIZE = 1000;
     static final double MUTATION_RATE = 0.01;
