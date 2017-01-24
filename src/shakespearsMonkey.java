@@ -55,11 +55,10 @@ public class shakespearsMonkey extends PApplet {
 
     @Override
     public void setup() {
-//        mono = createFont("SourceCodePro.ttf", 32);
+        mono = createFont("../data/SourceCodePro.ttf", 25);
         background(0);
         stroke(255);
-        textSize(25);
-//        textFont(mono);
+        textFont(mono);
     }
 
     @Override
@@ -93,7 +92,7 @@ public class shakespearsMonkey extends PApplet {
         text(String.format("Best phrase:%40s %20s %.3f", population[index].phenotype, "fitness:", population[index].fitness), 50, 50);
         text(String.format("Target:%45s %20s %4d%%", target, "Mutation rate:", (int) (MUTATION_RATE * 100)), 50, 100);
         text(String.format("Gen: %05d%30s%d", gen, "Initial population size: ",SIZE), 50, 200);
-        text(String.format("Elapsed time: %5fs",millis()/1000.),50,250);
+        text(String.format("Elapsed time: %9fs", millis() / 1000.), 50, 250);
         for (DNA member : population) {
             String res = member.getPhenotype();
             if (res.equals(target)) {
