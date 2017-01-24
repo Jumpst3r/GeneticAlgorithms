@@ -3,6 +3,7 @@ A collection of projects that try to visualize genetic algorithms (using process
 
 
  *This project was built using the processing 3 lib.*
+ 
  **https://processing.org/download/**
  
  To files in this project with your IDE,
@@ -11,4 +12,5 @@ A collection of projects that try to visualize genetic algorithms (using process
  
  
  The nature of code:
+ 
  http://natureofcode.com/
